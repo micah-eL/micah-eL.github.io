@@ -1,0 +1,10 @@
+To see alternate masthead image:
+Set src="assests/img/masthead/micah.JPG"
+Add the following in .masthead .masthead-avatar:
+	width: 20rem;
+	border-radius: 50%;
+
+
+To use an alternate avatar to the current avataaars.svg, create a new one at:
+https://getavataaars.com/?accessoriesType=Prescription02&avatarStyle=Circle&clotheType=BlazerSweater&eyeType=Dizzy&eyebrowType=DefaultNatural&facialHairType=BeardMajestic&hairColor=BrownDark&mouthType=Vomit&skinColor=Light&topType=LongHairBigHair
+
