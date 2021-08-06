@@ -11055,6 +11055,14 @@ html {
   }
 }
 
+#modalLink {
+  color: #000;
+  text-decoration: underline;
+}
+#modalLink:hover {
+  color: #5D5C61;
+}
+
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
