@@ -244,8 +244,22 @@
                                 </div>
                             </div>
 
-                            <!-- ===================== TO DO (timeline modal IDs are already updated, this will be #6, May 2019) ====================-->
                             <!-- iOS app: Hangman game-->
+                            <div class="timeline-row">
+                                <div class="timeline-content">
+                                    <div class="timeline-content-overlay" data-bs-toggle="modal" data-bs-target="#timelineModal6">
+                                        <p>Learn more</p>
+                                    </div>
+                                    <span class="timeline-date">
+                                        <span class="timeline-month">May</span>
+                                        <span class="timeline-year">2020</span>
+                                    </span>
+                                    <h2 class="timeline-content-title">Hangman game</h2>
+                                    <p class="timeline-content-description">
+                                        2-player version of the classic Hangman game developed for iOS.
+                                    </p>
+                                </div>
+                            </div>
 
                             <!-- Second summer coaching-->
                             <div class="timeline-row">
@@ -696,8 +710,54 @@
             </div>
         </div>
 
-        <!-- ===================== TO DO (timeline modal IDs are already updated, this will be #6) ====================-->
-        <!-- iOS app: Hangman game-->
+        <!-- Timeline modal 6 (hangman iOS game)-->
+        <div class="timeline-modal modal fade" id="timelineModal6" tabindex="-1" aria-labelledby="timelineModal6" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                            x
+                        </button>
+                    </div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+
+                                    <!-- Timeline Modal - Title-->
+                                    <h2 class="timeline-modal-title text-white text-uppercase mb-0">Hangman iOS game</h2>
+                                    
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom divider-light">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-swimmer"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    
+                                    <!-- Timeline Modal - Images-->
+                                    <img class="img-fluid rounded mb-5" src="static/assets/img/projects/hangmanApp.jpg" alt="..." />
+                                    
+                                    <!-- Timeline Modal - Text-->
+                                    <p class="mb-4 timeline-modal-description">
+                                        2-player version of the classic Hangman game for iOS.
+                                        This 2-player version allows player 1 to input a word, then pass the phone to player 2 who must guess the word. 
+                                        <br>
+                                        This game was developed while self-learning Swift just as a way to get familiar with the syntax so it is a pretty 'hacky' app without any real app architecture and just using @State variables. 
+                                        <br>
+                                        You can check this project out on my <a id="modalLink" href="https://github.com/micah-eL/hangman-iOS">GitHub</a>.
+                                    </p>
+                                    
+                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Timeline Modal 7 (second summer coaching)-->
         <div class="timeline-modal modal fade" id="timelineModal7" tabindex="-1" aria-labelledby="timelineModal7" aria-hidden="true">
