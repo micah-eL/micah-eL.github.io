@@ -459,7 +459,7 @@
                                 </div>
                             </div>
 
-                            <!-- Part time coaching with Hyack -->
+                            <!-- Part time coaching with Hyack-->
                             <div class="timeline-row">
                                 <div class="timeline-content">
                                     <div class="timeline-content-overlay" data-bs-toggle="modal" data-bs-target="#timelineModal18">
@@ -472,6 +472,23 @@
                                     <h2 class="timeline-content-title">Assistant swim coach at Hyack swim club</h2>
                                     <p class="timeline-content-description">
                                         I started coaching part time (right now only weekends because of my internship) with Hyack swim club.                                    
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Terminal texting-->
+                            <div class="timeline-row">
+                                <div class="timeline-content">
+                                    <div class="timeline-content-overlay" data-bs-toggle="modal" data-bs-target="#timelineModal19">
+                                        <p>Learn more</p>
+                                    </div>
+                                    <span class="timeline-date">
+                                        <span class="timeline-month">Oct</span>
+                                        <span class="timeline-year">2021</span>
+                                    </span>
+                                    <h2 class="timeline-content-title">Terminal texting</h2>
+                                    <p class="timeline-content-description">
+                                        I developed a simple client-server network application that can send messages over a TCP connection.                                    
                                     </p>
                                 </div>
                             </div>
@@ -1458,7 +1475,7 @@
         </div>
 
         <!-- Timeline modal 19 (terminal texting)-->
-        <div class="timeline-modal modal fade" id="timelineModal18" tabindex="-1" aria-labelledby="timelineModal18" aria-hidden="true">
+        <div class="timeline-modal modal fade" id="timelineModal19" tabindex="-1" aria-labelledby="timelineModal19" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header border-0">
@@ -1472,7 +1489,7 @@
                                 <div class="col-lg-8">
 
                                     <!-- Timeline Modal - Title-->
-                                    <h2 class="timeline-modal-title text-white text-uppercase mb-0">Assistant swim coach at Hyack swim club</h2>
+                                    <h2 class="timeline-modal-title text-white text-uppercase mb-0">Terminal texting</h2>
                                     
                                     <!-- Icon Divider-->
                                     <div class="divider-custom divider-light">
@@ -1482,29 +1499,32 @@
                                     </div>
                                     
                                     <!-- Timeline Modal - Images-->
-                                    <img class="img-fluid rounded mb-5" src="static/assets/img/swimming/hyackOJIswimming.jpg" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="static/assets/img/projects/terminalTexting-server.jpg" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="static/assets/img/projects/terminalTexting-client.jpg" alt="..." />
                                     
                                     <!-- Timeline Modal - Text-->
                                     <p class="mb-4 timeline-modal-description">
-                                        I love learning how things work but often times this can be to my detriment because sometimes that formula they give you in your Numerical Analysis or Linear Algebra class is meant to be memorized and used, not studied for hours on end!
-                                        But regardless, this is another case of me diving down the rabbit hole, this time with computer networking.
-                                        I'd highly recommend reading through at least the first chapter of Computer Networking: A Top-Down Approach, 6th edition, Kurose.
-                                        In fact, this application was inpsired by the example Python application in chapter 2.7.2 of Computer Networking: A Top-Down Approach, 6th edition, Kurose.
+                                        My recent interest in the lower level aspects of computer science stems from my interest in learning how things work.
+                                        Now not just a superficial understanding, but a deep - usually all the way down to hardware - understanding of what exactly is going on.
+                                        Often times this can be to my detriment because sometimes that formula they give you in your Numerical Analysis or Linear Algebra class is meant to be memorized and used, not studied for hours on end!
+                                        But regardless, this project was another case of me going down the rabbit hole, this time with computer networking.
+                                        I ended up picking up Computer Networking: A Top-Down Approach, 6th edition, and after having read a few chapters, I'd highly recommend reading through at least the first chapter.
                                         Some of the information presented really made me re-evaluate how much I thought I knew about things like the Internet and the World Wide Web. 
-                                        And no, 192.168.0.5 isn't really my IP address, I hope you knew that without having to read a computer networking textbook. 
+                                        This application was actually inpsired by the example Python application in chapter 2.7.2 of this textbook. 
                                         <br><br>
-                                        This simple client-server application essentially just follows this basic flow:
-                                        <br>
-                                        Flow for server-side TCP connection:
-                                        <br>
-                                        getaddrinfo() -> socket() -> bind() -> listen() and accept() -> send() and recv() -> close() and shutdown()
-                                        <br>
-                                        Flow for client-side TCP connection:
-                                        <br>
-                                        getaddrinfo() -> socket() -> connect() -> send() and recv() ->  close() or shutdown()
-                                        <br>
+                                        These two C programs are just following a basic TCP connection flow.
+                                        Server-side:
+                                        <br><br>
+                                        getaddrinfo() -> socket() -> bind() -> listen() and accept() -> fork() -> recv() and send() -> close() child process -> repeat from listen() and accept()
+                                        <br><br>
+                                        Client-side:
+                                        <br><br>
+                                        getaddrinfo() -> socket() -> connect() -> send() and recv() ->  close() and shutdown()
+                                        <br><br>
                                         One thing that tripped me up at first was getaddrinfo() returning a linked list.
                                         It does this because a host could have multiple ways to contact to it, for example, the network host could be accessible over both a TCP and UDP connection.
+                                        <br>
+                                        And no, 192.168.0.5 isn't really my IP address, I hope you knew that without having to read a computer networking textbook. 
                                         <br>
                                         You can check this project out on my <a id="modalLink" href="https://github.com/micah-eL/terminal-texting">GitHub</a>.
                                     </p>
