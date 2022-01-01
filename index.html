@@ -135,7 +135,7 @@
                             Of course, now that I have more time and energy than I know what to do with, I’ll be continuously adding new projects I work on, so I hope you come back to check those out as well.
                             <br>
                             <br>
-                            P.S. My internship with FORM ends December 2021 so I'd love to hear about any summer 2022 or fall 2022 internship opportunities! 
+                            P.S. My internship with FORM ended December 2021 so I'm turning my focus to my upcoming classes, but I'd love to hear about Fall 2022 internship opportunities! 
                         </p>
                     </div>
                     <div class="col-lg-2"></div>
@@ -499,6 +499,24 @@
                                     <h2 class="timeline-content-title">MERN REST API</h2>
                                     <p class="timeline-content-description">
                                         I implemented a RESTful API using the MERN stack for my xSwimTeam project.                                    
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- First internship completed + misc.-->
+                            <div class="timeline-row">
+                                <div class="timeline-content">
+                                    <div class="timeline-content-overlay" data-bs-toggle="modal" data-bs-target="#timelineModal21">
+                                        <p>Learn more</p>
+                                    </div>
+                                    <span class="timeline-date">
+                                        <span class="timeline-month">Dec</span>
+                                        <span class="timeline-year">2021</span>
+                                    </span>
+                                    <h2 class="timeline-content-title">First internship completed + misc.</h2>
+                                    <p class="timeline-content-description">
+                                        First internship completed, a semi-working HTTP server completed, and of course lots of coaching and relaxtion.
+                                        Now looking for Fall 2022 internships and turning my focus to classes.                                     
                                     </p>
                                 </div>
                             </div>
@@ -1590,6 +1608,78 @@
                                         However, it does seem like I am not alone in this habit of leaving side projects half finished so I've found some solace in that.
                                         <br>
                                         You can check this project out on my <a id="modalLink" href="https://github.com/micah-eL/xSwimTeam-rest-api">GitHub</a>.
+                                    </p>
+                                    
+                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Timeline modal 21 (First internship completed + misc.)-->
+        <div class="timeline-modal modal fade" id="timelineModal21" tabindex="-1" aria-labelledby="timelineModal21" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                            x
+                        </button>
+                    </div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+
+                                    <!-- Timeline Modal - Title-->
+                                    <h2 class="timeline-modal-title text-white text-uppercase mb-0">First internship completed + misc.</h2>
+                                    
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom divider-light">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-swimmer"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    
+                                    <!-- Timeline Modal - Text-->
+                                    <p class="mb-4 timeline-modal-description">
+                                        I recently completed my (first) internship at FORM and I still can’t believe how fast these past 8 months flew by. 
+                                        Not only did I learn a lot, but I also had fun the whole time!
+                                        I understand what people mean by WLB and team culture at work a lot better now, and I’m glad I know what to seek out in future internships and full-time positions once I graduate. 
+                                        <br>
+                                        <br>
+                                        But really, this whole year just flew by and what a year it was. 
+                                        I finished my third year of university, retired from swimming, completed my first internship, got back into coaching, worked on some cool side projects (I can’t believe I’ve only had this website up for a few months), and sort of (?) figured out how to workout on my own. 
+                                        Oh and I also feel like I’ve recovered some of the sleep debt I’ve accumulated from those late night study sessions and 5:00am practices, but I’ll continue to chip away at that in the years to come. 
+                                        <br>
+                                        <br>
+                                        These past few weeks, I’ve been doing a lot of coaching and also working on a few things oustside of work, but I've also taken some time to relax.
+                                        <br>
+                                        For side projects, I've started working on, and currently have a semi-working HTTP server that you can take a look at on my <a id="modalLink" href="https://github.com/micah-eL/http_server">GitHub</a>.
+                                        Right now it’s just hard coded to return a few very basic HTML documents because I’m still working on that load_file() helper method.
+                                        <br>
+                                        I also spent a bit more time on my xSwimTeam REST API and I ended up implementing some basic authorization using JSON web tokens. 
+                                        <br>
+                                        Aside from those side projects, I've also spent some more time just reading about system design patterns because I’ve found it really cool to see how some of the concepts that are being taught in our CS classes are being used to solve real world problems. 
+                                        One article that I really enjoyed reading was this <a id="modalLink" href="https://nickcraver.com/blog/2016/02/17/stack-overflow-the-architecture-2016-edition/">Stack Overflow article</a>.
+                                        I was originally intrigued by this stuff after spending some time talking with some of the senior engineers at FORM about the back end infrastructure they had set up when the company was just getting started, and how it has evolved into what it is today. 
+                                        In fact, this was one of my main motivations for my xSwimTeam iOS app + REST API project. 
+                                        Seeing how everything is connected in the big picture is just so incredibly satisfying, but it also serves as a reminder that these services that seem simple at first actually have a complex but efficient design. 
+                                        For example, caching seems simple in theory, but there are a few things you might not think about if you've never actually implemented it. 
+                                        In a mobile app we can cache network responses using key-value storage, where keys are the URLs, and the values are the JSON responses. 
+                                        This seems pretty straightforward, but now remember that some network requests, like network requests that are paginated, won’t have unique URLs (the "nextCursor" string used to represent the current page is usually sent in the request body), meaning you can’t just use the URL as the cache key.
+                                        This means that basically any URL that specifies uniqueness to the API in their request body needs to specify a unique cache key, usually by extracting the appropriate parameter (ex. nextCursor) from the request body and into the URL.
+                                        <br>
+                                        <br>
+                                        Anyways, tomorrow, 2022 starts and I’ll be turning my attention to my classes for this upcoming Spring semester, and of course with my internship having come to an end, I’m looking ahead for future internship opportunities (particularly Fall 2022 internships). 
+                                        I can’t believe the last time I took classes was a year ago during Spring 2021!
+                                        While I will miss all the support that comes with being a varsity athlete, I am looking forward to immersing myself fully in my academics now. 
+                                        I’m especially excited to get back to in classes because they’re back in person; online classes were just not my thing.
                                     </p>
                                     
                                     <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
